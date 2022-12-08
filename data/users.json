@@ -1,0 +1,26 @@
+[
+    {
+        "username":"admin1",
+        "password":"123456",
+        "role":"admin",
+        "email":"raihanqowi@gmail.com"
+    },
+    {
+        "username":"qowi",
+        "password":"123456",
+        "role":"user",
+        "email":"qowi@gmail.com"
+    },
+    {
+        "username":"ucan",
+        "password":"123456",
+        "role":"user",
+        "email":"ucan@gmail.com"
+    },
+    {
+        "username":"yorima",
+        "password":"123456",
+        "role":"user",
+        "email":"yorimakun@gmail.com"
+    }
+]
