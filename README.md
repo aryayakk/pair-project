@@ -2,23 +2,23 @@
 
 ======================= Requirement in Database Level =======================
 
-[v] Schema Table\n
+[v] Schema Table
     Terdapat entitas wajib yaitu users dengan attribute yang harus ada:
-    [] email
-    [] password
-    [] role
+    [v] email
+    [v] password
+    [v] role
     Memiliki 2 jenis asosiasi yang berbeda:
-    [] One to One (wajib)
-    [] One to Many
+    [v] One to One (wajib)
+    [v] One to Many
     [] Many to Many
 [] Membuat migration
 [] Membuat migration tambahan (add column, dll)
 [] Membuat seeder
 
-Requirement Routes
+============================= Requirement Routes ============================
 
-Minimal terdapat 2 route GET dan 1 route POST
-Terdapat route untuk logout
+[] Minimal terdapat 2 route GET dan 1 route POST
+[] Terdapat route untuk logout
 
 
 ========================== Requirement Aplikasi =============================
