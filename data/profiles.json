@@ -1,0 +1,21 @@
+[
+    {
+        "fullName":"Raihan Qowi",
+        "gender":"male",
+        "profilePicture":"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+        "UserId":2
+    },
+    {
+        "fullName":"Nursan",
+        "gender":"male",
+        "profilePicture":"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+        "UserId":3
+    },
+    
+    {
+        "fullName":"Yorima Kun",
+        "gender":"male",
+        "profilePicture":"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+        "UserId":4
+    }
+]
