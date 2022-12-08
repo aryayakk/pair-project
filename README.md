@@ -11,7 +11,7 @@
     [v] One to One (wajib)
     [v] One to Many
     [] Many to Many
-[] Membuat migration
+[v] Membuat migration
 [] Membuat migration tambahan (add column, dll)
 [] Membuat seeder
 
