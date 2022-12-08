@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1 style="margin-left:32%">Register your Account</h1>
+    <form action="/register" method="post">
+        <div class="container">
+
+            <div class="form-group">
+                <label for="username"><b>UserName</b></label>
+                <input type="text" class="form-control" name="username" id="username" placeholder="username">
+              </div>
+
+            <div class="form-group">
+                <label for="password"><b>password</b></label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="password">
+            </div>
+
+            <div class="form-group">
+              <label for="password"><b>Full Name</b></label>
+              <input type="text" class="form-control" name="fullName" id="fullName" placeholder="Name">
+          </div>
+
+          <div class="form-group">
+            <label for="password"><b>Profile Picture</b></label>
+            <input type="text" class="form-control" name="profilePicture" id="profilePicture" placeholder="Url">
+        </div>
+
+        <div>
+
+            <p>Gender: </p>
+            <input type="radio"  name="gender" value="male">
+            <label for="html">Male</label><br>
+            <input type="radio"  name="gender" value="female">
+            <label for="css">Female</label><br>
+            
+       
+        </div>
+
+          <div class="form-group">
+            <label for="email"><b>Email</b></label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="email">
+          </div>
+        </div> 
+        <button type="submit" class="btn btn-outline-info" style="margin-left: 45%;margin-top:10px;">Submit</button>
+      </form>
+</body>
+</html>

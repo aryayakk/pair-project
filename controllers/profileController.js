@@ -1,6 +1,6 @@
-class profileController {
+class ProfileController {
 
     
 }
 
-module.exports = profileController
+module.exports = ProfileController

@@ -1,7 +1,10 @@
 const express = require('express')
-const profileController = require('../controllers/profileController')
+const ProfileController = require('../controllers/profileController')
 const router = express.Router()
 
+router.get('/', (req,res) => {
+    res.render('HomePage')
+})
 
 
 
