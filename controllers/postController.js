@@ -1,7 +1,7 @@
-class postController {
+class PostController {
 
 
 }
 
 
-module.exports = postController
+module.exports = PostController
