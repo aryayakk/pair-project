@@ -1,5 +1,6 @@
 const { User, Profiles} = require('../models')
 const bcrypt = require('bcryptjs');
+const sendEmail = require('../helpers/nodemailer')
 
 class UserController {
     static loginForm(req,res){
@@ -19,10 +20,9 @@ class UserController {
         .then((newUser) => {
             // console.log(newUser);
              temp = newUser
-            
-             
              return Profiles.create({fullName,profilePicture,gender,UserId : temp.id})
         })
+        sendEmail(email)
         // console.log(temp, "<<<<");
         .then((data) => {
              res.redirect('/login')

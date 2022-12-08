@@ -13,13 +13,24 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      User.hasOne(models.Profiles)
     }
   }
   User.init({
-    username: DataTypes.STRING,
+    username: {
+      type: DataTypes.STRING,
+      unique: {
+        msg: "Username Already Taken"
+      }
+    },
     password: DataTypes.STRING,
     role: DataTypes.STRING,
-    email: DataTypes.STRING
+    email: {
+      type: DataTypes.STRING,
+      unique: {
+        msg: "Email Already Taken"
+      }
+    }
   }, {
     hooks: {
       beforeCreate(instance,option){

@@ -6,14 +6,26 @@ const UserController = require('../controllers/userController')
 const AdminController = require('../controllers/adminController')
 
 
+
+
 //GET REGISTER 
 router.get('/register',UserController.registerForm)
 router.post('/register',UserController.postRegisterForm)
 //LOGIN
-router.get('/login',UserController.loginForm)
+
+// router.get(
+//     '/login',
+//     (req, res) => {
+//         if (req.session) {
+//             req.session.role === 'admin'? 
+//                 res.redirect(`/admin`) 
+//             : 
+//                 res.redirect(`/profile`)
+//         }
+//     },
+//     UserController.loginForm)
+router.get('/login', UserController.loginForm)
 router.post('/login',UserController.postLogin)
-
-
 
 router.use((req, res, next) => {
     if(!req.session.userId){
@@ -39,6 +51,7 @@ router.use((req, res, next) => {
 
 
 router.get ('/admin', AdminController.readAll)
+router.get('/admin/:id/detail', AdminController.detail)
 
 
 

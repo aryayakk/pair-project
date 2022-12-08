@@ -12,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       Profiles.hasMany(models.Post)
+      Profiles.belongsTo(models.User)
     }
   }
   Profiles.init({
