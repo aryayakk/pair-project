@@ -2,7 +2,7 @@
 
 ======================= Requirement in Database Level =======================
 
-[v] Schema Table
+[v] Schema Table\n
     Terdapat entitas wajib yaitu users dengan attribute yang harus ada:
     [] email
     [] password
